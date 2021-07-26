@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtetgen2.a  CMakeFiles/tetgen2.dir/tetgen/tetra.cpp.o CMakeFiles/tetgen2.dir/tetgen/io.cpp.o CMakeFiles/tetgen2.dir/tetgen/pred3d.cpp.o CMakeFiles/tetgen2.dir/tetgen/metric.cpp.o CMakeFiles/tetgen2.dir/tetgen/sort.cpp.o CMakeFiles/tetgen2.dir/tetgen/delaunay.cpp.o CMakeFiles/tetgen2.dir/tetgen/flips.cpp.o CMakeFiles/tetgen2.dir/tetgen/constrained.cpp.o CMakeFiles/tetgen2.dir/tetgen/voronoi.cpp.o CMakeFiles/tetgen2.dir/tetgen/shelling.cpp.o CMakeFiles/tetgen2.dir/tetgen/hts.cpp.o CMakeFiles/tetgen2.dir/tetgen/main.cpp.o
+/usr/bin/ranlib libtetgen2.a

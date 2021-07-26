@@ -1,0 +1,1766 @@
+The system is: Linux - 5.4.0-80-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/gridteam/workplace/TetWild/cmake/CMakeFiles/3.10.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/gridteam/workplace/TetWild/cmake/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0fde0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0fde0.dir/build.make CMakeFiles/cmTC_0fde0.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0fde0.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0fde0.dir/testCCompiler.c.o   -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_0fde0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fde0.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_0fde0.dir/testCCompiler.c.o  -o cmTC_0fde0 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74fab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74fab.dir/build.make CMakeFiles/cmTC_74fab.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_74fab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74fab.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o  -o cmTC_74fab 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_74fab' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc12xgVs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_74fab /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_74fab' '-mtune=generic' '-march=x86-64'
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_74fab/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_74fab.dir/build.make CMakeFiles/cmTC_74fab.dir/build]
+  ignore line: [make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”]
+  ignore line: [Building C object CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_74fab]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74fab.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o  -o cmTC_74fab ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_74fab' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc12xgVs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_74fab /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc12xgVs.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_74fab] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
+    arg [CMakeFiles/cmTC_74fab.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_34303/fast"
+/usr/bin/make -f CMakeFiles/cmTC_34303.dir/build.make CMakeFiles/cmTC_34303.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_34303.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_34303.dir/feature_tests.c.o   -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/feature_tests.c
+Linking C executable cmTC_34303
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34303.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_34303.dir/feature_tests.c.o  -o cmTC_34303 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fbbd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fbbd.dir/build.make CMakeFiles/cmTC_1fbbd.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1fbbd.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_1fbbd.dir/feature_tests.c.o   -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1fbbd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fbbd.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_1fbbd.dir/feature_tests.c.o  -o cmTC_1fbbd 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e3178/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e3178.dir/build.make CMakeFiles/cmTC_e3178.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e3178.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_e3178.dir/feature_tests.c.o   -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e3178
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3178.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_e3178.dir/feature_tests.c.o  -o cmTC_e3178 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_af94a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_af94a.dir/build.make CMakeFiles/cmTC_af94a.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_af94a.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_af94a.dir/testCXXCompiler.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_af94a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af94a.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_af94a.dir/testCXXCompiler.cxx.o  -o cmTC_af94a 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_438db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_438db.dir/build.make CMakeFiles/cmTC_438db.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_438db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_438db.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_438db 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_438db' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccntb5dM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_438db /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_438db' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_438db/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_438db.dir/build.make CMakeFiles/cmTC_438db.dir/build]
+  ignore line: [make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”]
+  ignore line: [Building CXX object CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_438db]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_438db.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_438db ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_438db' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccntb5dM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_438db /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccntb5dM.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_438db] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
+    arg [CMakeFiles/cmTC_438db.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ff79b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff79b.dir/build.make CMakeFiles/cmTC_ff79b.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_ff79b.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_ff79b.dir/feature_tests.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ff79b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff79b.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_ff79b.dir/feature_tests.cxx.o  -o cmTC_ff79b 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00991/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00991.dir/build.make CMakeFiles/cmTC_00991.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_00991.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_00991.dir/feature_tests.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_00991
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00991.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_00991.dir/feature_tests.cxx.o  -o cmTC_00991 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94b9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94b9c.dir/build.make CMakeFiles/cmTC_94b9c.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_94b9c.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_94b9c.dir/feature_tests.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_94b9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94b9c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_94b9c.dir/feature_tests.cxx.o  -o cmTC_94b9c 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a26a6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a26a6.dir/build.make CMakeFiles/cmTC_a26a6.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_a26a6.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_a26a6.dir/feature_tests.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a26a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a26a6.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_a26a6.dir/feature_tests.cxx.o  -o cmTC_a26a6 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wall succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e9a00/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e9a00.dir/build.make CMakeFiles/cmTC_e9a00.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e9a00.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wall   -Wall -o CMakeFiles/cmTC_e9a00.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_e9a00
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9a00.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wall    -rdynamic CMakeFiles/cmTC_e9a00.dir/src.cxx.o  -o cmTC_e9a00 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wextra succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c83b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c83b7.dir/build.make CMakeFiles/cmTC_c83b7.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c83b7.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wextra   -Wextra -o CMakeFiles/cmTC_c83b7.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_c83b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c83b7.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wextra    -rdynamic CMakeFiles/cmTC_c83b7.dir/src.cxx.o  -o cmTC_c83b7 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-pedantic succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9385d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9385d.dir/build.make CMakeFiles/cmTC_9385d.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9385d.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-pedantic   -pedantic -o CMakeFiles/cmTC_9385d.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_9385d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9385d.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-pedantic    -rdynamic CMakeFiles/cmTC_9385d.dir/src.cxx.o  -o cmTC_9385d 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wunused succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_423ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_423ae.dir/build.make CMakeFiles/cmTC_423ae.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_423ae.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused   -Wunused -o CMakeFiles/cmTC_423ae.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_423ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_423ae.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused    -rdynamic CMakeFiles/cmTC_423ae.dir/src.cxx.o  -o cmTC_423ae 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wno-long-long succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a0bcc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0bcc.dir/build.make CMakeFiles/cmTC_a0bcc.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a0bcc.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-long-long   -Wno-long-long -o CMakeFiles/cmTC_a0bcc.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_a0bcc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0bcc.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-long-long    -rdynamic CMakeFiles/cmTC_a0bcc.dir/src.cxx.o  -o cmTC_a0bcc 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wpointer-arith succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c1d0f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c1d0f.dir/build.make CMakeFiles/cmTC_c1d0f.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c1d0f.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wpointer-arith   -Wpointer-arith -o CMakeFiles/cmTC_c1d0f.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_c1d0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1d0f.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wpointer-arith    -rdynamic CMakeFiles/cmTC_c1d0f.dir/src.cxx.o  -o cmTC_c1d0f 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wformat-2 succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_86df8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_86df8.dir/build.make CMakeFiles/cmTC_86df8.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_86df8.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wformat-2   -Wformat=2 -o CMakeFiles/cmTC_86df8.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_86df8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86df8.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wformat-2    -rdynamic CMakeFiles/cmTC_86df8.dir/src.cxx.o  -o cmTC_86df8 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wuninitialized succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9c5f6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9c5f6.dir/build.make CMakeFiles/cmTC_9c5f6.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c5f6.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wuninitialized   -Wuninitialized -o CMakeFiles/cmTC_9c5f6.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_9c5f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c5f6.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wuninitialized    -rdynamic CMakeFiles/cmTC_9c5f6.dir/src.cxx.o  -o cmTC_9c5f6 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wcast-qual succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68127/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68127.dir/build.make CMakeFiles/cmTC_68127.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_68127.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wcast-qual   -Wcast-qual -o CMakeFiles/cmTC_68127.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_68127
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68127.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wcast-qual    -rdynamic CMakeFiles/cmTC_68127.dir/src.cxx.o  -o cmTC_68127 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wmissing-noreturn succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5ea02/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5ea02.dir/build.make CMakeFiles/cmTC_5ea02.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5ea02.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wmissing-noreturn   -Wmissing-noreturn -o CMakeFiles/cmTC_5ea02.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_5ea02
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ea02.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wmissing-noreturn    -rdynamic CMakeFiles/cmTC_5ea02.dir/src.cxx.o  -o cmTC_5ea02 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wmissing-format-attribute succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5972c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5972c.dir/build.make CMakeFiles/cmTC_5972c.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5972c.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wmissing-format-attribute   -Wmissing-format-attribute -o CMakeFiles/cmTC_5972c.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_5972c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5972c.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wmissing-format-attribute    -rdynamic CMakeFiles/cmTC_5972c.dir/src.cxx.o  -o cmTC_5972c 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wredundant-decls succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fb121/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fb121.dir/build.make CMakeFiles/cmTC_fb121.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fb121.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wredundant-decls   -Wredundant-decls -o CMakeFiles/cmTC_fb121.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_fb121
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb121.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wredundant-decls    -rdynamic CMakeFiles/cmTC_fb121.dir/src.cxx.o  -o cmTC_fb121 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-implicit succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_50045/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50045.dir/build.make CMakeFiles/cmTC_50045.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_50045.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-implicit   -Werror=implicit -o CMakeFiles/cmTC_50045.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K'[01m[K-Werror=[m[K' argument '[01m[K-Werror=implicit[m[K' is not valid for C++
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_50045
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50045.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-implicit    -rdynamic CMakeFiles/cmTC_50045.dir/src.cxx.o  -o cmTC_50045 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-nonnull succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0ef55/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0ef55.dir/build.make CMakeFiles/cmTC_0ef55.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0ef55.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-nonnull   -Werror=nonnull -o CMakeFiles/cmTC_0ef55.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_0ef55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ef55.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-nonnull    -rdynamic CMakeFiles/cmTC_0ef55.dir/src.cxx.o  -o cmTC_0ef55 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-init-self succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9bce3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9bce3.dir/build.make CMakeFiles/cmTC_9bce3.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9bce3.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-init-self   -Werror=init-self -o CMakeFiles/cmTC_9bce3.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_9bce3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bce3.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-init-self    -rdynamic CMakeFiles/cmTC_9bce3.dir/src.cxx.o  -o cmTC_9bce3 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-main succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7d2f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7d2f2.dir/build.make CMakeFiles/cmTC_7d2f2.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7d2f2.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-main   -Werror=main -o CMakeFiles/cmTC_7d2f2.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_7d2f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d2f2.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-main    -rdynamic CMakeFiles/cmTC_7d2f2.dir/src.cxx.o  -o cmTC_7d2f2 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-missing-braces succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_82659/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82659.dir/build.make CMakeFiles/cmTC_82659.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_82659.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-missing-braces   -Werror=missing-braces -o CMakeFiles/cmTC_82659.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_82659
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82659.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-missing-braces    -rdynamic CMakeFiles/cmTC_82659.dir/src.cxx.o  -o cmTC_82659 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-sequence-point succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94d61/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94d61.dir/build.make CMakeFiles/cmTC_94d61.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_94d61.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-sequence-point   -Werror=sequence-point -o CMakeFiles/cmTC_94d61.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_94d61
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94d61.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-sequence-point    -rdynamic CMakeFiles/cmTC_94d61.dir/src.cxx.o  -o cmTC_94d61 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-return-type succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_945a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_945a2.dir/build.make CMakeFiles/cmTC_945a2.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_945a2.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-return-type   -Werror=return-type -o CMakeFiles/cmTC_945a2.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_945a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_945a2.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-return-type    -rdynamic CMakeFiles/cmTC_945a2.dir/src.cxx.o  -o cmTC_945a2 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-trigraphs succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c08cb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c08cb.dir/build.make CMakeFiles/cmTC_c08cb.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c08cb.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-trigraphs   -Werror=trigraphs -o CMakeFiles/cmTC_c08cb.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_c08cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c08cb.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-trigraphs    -rdynamic CMakeFiles/cmTC_c08cb.dir/src.cxx.o  -o cmTC_c08cb 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-array-bounds succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9d211/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9d211.dir/build.make CMakeFiles/cmTC_9d211.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9d211.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-array-bounds   -Werror=array-bounds -o CMakeFiles/cmTC_9d211.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_9d211
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d211.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-array-bounds    -rdynamic CMakeFiles/cmTC_9d211.dir/src.cxx.o  -o cmTC_9d211 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-write-strings succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9fc49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9fc49.dir/build.make CMakeFiles/cmTC_9fc49.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9fc49.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-write-strings   -Werror=write-strings -o CMakeFiles/cmTC_9fc49.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_9fc49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fc49.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-write-strings    -rdynamic CMakeFiles/cmTC_9fc49.dir/src.cxx.o  -o cmTC_9fc49 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-address succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2b5ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b5ca.dir/build.make CMakeFiles/cmTC_2b5ca.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2b5ca.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-address   -Werror=address -o CMakeFiles/cmTC_2b5ca.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_2b5ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b5ca.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-address    -rdynamic CMakeFiles/cmTC_2b5ca.dir/src.cxx.o  -o cmTC_2b5ca 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-int-to-pointer-cast succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ee2a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ee2a4.dir/build.make CMakeFiles/cmTC_ee2a4.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ee2a4.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-int-to-pointer-cast   -Werror=int-to-pointer-cast -o CMakeFiles/cmTC_ee2a4.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_ee2a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee2a4.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-int-to-pointer-cast    -rdynamic CMakeFiles/cmTC_ee2a4.dir/src.cxx.o  -o cmTC_ee2a4 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-pointer-to-int-cast succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fa5a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fa5a.dir/build.make CMakeFiles/cmTC_1fa5a.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1fa5a.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-pointer-to-int-cast   -Werror=pointer-to-int-cast -o CMakeFiles/cmTC_1fa5a.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K'[01m[K-Werror=[m[K' argument '[01m[K-Werror=pointer-to-int-cast[m[K' is not valid for C++
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_1fa5a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fa5a.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-pointer-to-int-cast    -rdynamic CMakeFiles/cmTC_1fa5a.dir/src.cxx.o  -o cmTC_1fa5a 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wunused-variable succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_835fd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_835fd.dir/build.make CMakeFiles/cmTC_835fd.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_835fd.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused-variable   -Wunused-variable -o CMakeFiles/cmTC_835fd.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_835fd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_835fd.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused-variable    -rdynamic CMakeFiles/cmTC_835fd.dir/src.cxx.o  -o cmTC_835fd 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wunused-but-set-variable succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_544f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_544f7.dir/build.make CMakeFiles/cmTC_544f7.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_544f7.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused-but-set-variable   -Wunused-but-set-variable -o CMakeFiles/cmTC_544f7.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_544f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_544f7.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused-but-set-variable    -rdynamic CMakeFiles/cmTC_544f7.dir/src.cxx.o  -o cmTC_544f7 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wunused-parameter succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_910d1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_910d1.dir/build.make CMakeFiles/cmTC_910d1.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_910d1.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused-parameter   -Wunused-parameter -o CMakeFiles/cmTC_910d1.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_910d1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_910d1.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wunused-parameter    -rdynamic CMakeFiles/cmTC_910d1.dir/src.cxx.o  -o cmTC_910d1 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wno-old-style-cast succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_469dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_469dc.dir/build.make CMakeFiles/cmTC_469dc.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_469dc.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-old-style-cast   -Wno-old-style-cast -o CMakeFiles/cmTC_469dc.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_469dc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_469dc.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-old-style-cast    -rdynamic CMakeFiles/cmTC_469dc.dir/src.cxx.o  -o cmTC_469dc 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wshadow succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_765e5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_765e5.dir/build.make CMakeFiles/cmTC_765e5.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_765e5.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wshadow   -Wshadow -o CMakeFiles/cmTC_765e5.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_765e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_765e5.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wshadow    -rdynamic CMakeFiles/cmTC_765e5.dir/src.cxx.o  -o cmTC_765e5 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wstrict-null-sentinel succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_04e24/fast"
+/usr/bin/make -f CMakeFiles/cmTC_04e24.dir/build.make CMakeFiles/cmTC_04e24.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_04e24.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-null-sentinel   -Wstrict-null-sentinel -o CMakeFiles/cmTC_04e24.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_04e24
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04e24.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-null-sentinel    -rdynamic CMakeFiles/cmTC_04e24.dir/src.cxx.o  -o cmTC_04e24 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Woverloaded-virtual succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f22c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f22c.dir/build.make CMakeFiles/cmTC_0f22c.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0f22c.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Woverloaded-virtual   -Woverloaded-virtual -o CMakeFiles/cmTC_0f22c.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_0f22c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f22c.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Woverloaded-virtual    -rdynamic CMakeFiles/cmTC_0f22c.dir/src.cxx.o  -o cmTC_0f22c 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wsign-promo succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3a98f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a98f.dir/build.make CMakeFiles/cmTC_3a98f.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3a98f.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wsign-promo   -Wsign-promo -o CMakeFiles/cmTC_3a98f.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_3a98f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a98f.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wsign-promo    -rdynamic CMakeFiles/cmTC_3a98f.dir/src.cxx.o  -o cmTC_3a98f 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wstack-protector succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5c33e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5c33e.dir/build.make CMakeFiles/cmTC_5c33e.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5c33e.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wstack-protector   -Wstack-protector -o CMakeFiles/cmTC_5c33e.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_5c33e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c33e.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wstack-protector    -rdynamic CMakeFiles/cmTC_5c33e.dir/src.cxx.o  -o cmTC_5c33e 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wstrict-aliasing succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68a9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68a9c.dir/build.make CMakeFiles/cmTC_68a9c.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_68a9c.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-aliasing   -Wstrict-aliasing -o CMakeFiles/cmTC_68a9c.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_68a9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68a9c.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-aliasing    -rdynamic CMakeFiles/cmTC_68a9c.dir/src.cxx.o  -o cmTC_68a9c 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wstrict-aliasing-2 succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb0bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb0bc.dir/build.make CMakeFiles/cmTC_eb0bc.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb0bc.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-aliasing-2   -Wstrict-aliasing=2 -o CMakeFiles/cmTC_eb0bc.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_eb0bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb0bc.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-aliasing-2    -rdynamic CMakeFiles/cmTC_eb0bc.dir/src.cxx.o  -o cmTC_eb0bc 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wswitch-default succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6309a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6309a.dir/build.make CMakeFiles/cmTC_6309a.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6309a.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wswitch-default   -Wswitch-default -o CMakeFiles/cmTC_6309a.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_6309a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6309a.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wswitch-default    -rdynamic CMakeFiles/cmTC_6309a.dir/src.cxx.o  -o cmTC_6309a 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wswitch-enum succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c4ab9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4ab9.dir/build.make CMakeFiles/cmTC_c4ab9.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c4ab9.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wswitch-enum   -Wswitch-enum -o CMakeFiles/cmTC_c4ab9.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_c4ab9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4ab9.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wswitch-enum    -rdynamic CMakeFiles/cmTC_c4ab9.dir/src.cxx.o  -o cmTC_c4ab9 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wswitch-unreachable succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_28a58/fast"
+/usr/bin/make -f CMakeFiles/cmTC_28a58.dir/build.make CMakeFiles/cmTC_28a58.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_28a58.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wswitch-unreachable   -Wswitch-unreachable -o CMakeFiles/cmTC_28a58.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_28a58
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28a58.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wswitch-unreachable    -rdynamic CMakeFiles/cmTC_28a58.dir/src.cxx.o  -o cmTC_28a58 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wcast-align succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dbd43/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dbd43.dir/build.make CMakeFiles/cmTC_dbd43.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dbd43.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wcast-align   -Wcast-align -o CMakeFiles/cmTC_dbd43.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_dbd43
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbd43.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wcast-align    -rdynamic CMakeFiles/cmTC_dbd43.dir/src.cxx.o  -o cmTC_dbd43 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wdisabled-optimization succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_da8b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_da8b2.dir/build.make CMakeFiles/cmTC_da8b2.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_da8b2.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wdisabled-optimization   -Wdisabled-optimization -o CMakeFiles/cmTC_da8b2.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_da8b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da8b2.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wdisabled-optimization    -rdynamic CMakeFiles/cmTC_da8b2.dir/src.cxx.o  -o cmTC_da8b2 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Winvalid-pch succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6989c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6989c.dir/build.make CMakeFiles/cmTC_6989c.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6989c.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Winvalid-pch   -Winvalid-pch -o CMakeFiles/cmTC_6989c.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_6989c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6989c.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Winvalid-pch    -rdynamic CMakeFiles/cmTC_6989c.dir/src.cxx.o  -o cmTC_6989c 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wpacked succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8209/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8209.dir/build.make CMakeFiles/cmTC_c8209.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8209.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wpacked   -Wpacked -o CMakeFiles/cmTC_c8209.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_c8209
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8209.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wpacked    -rdynamic CMakeFiles/cmTC_c8209.dir/src.cxx.o  -o cmTC_c8209 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wno-padded succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8436b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8436b.dir/build.make CMakeFiles/cmTC_8436b.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8436b.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-padded   -Wno-padded -o CMakeFiles/cmTC_8436b.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_8436b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8436b.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-padded    -rdynamic CMakeFiles/cmTC_8436b.dir/src.cxx.o  -o cmTC_8436b 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wstrict-overflow succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_81400/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81400.dir/build.make CMakeFiles/cmTC_81400.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81400.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-overflow   -Wstrict-overflow -o CMakeFiles/cmTC_81400.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_81400
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81400.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-overflow    -rdynamic CMakeFiles/cmTC_81400.dir/src.cxx.o  -o cmTC_81400 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wstrict-overflow-2 succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5b87f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5b87f.dir/build.make CMakeFiles/cmTC_5b87f.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5b87f.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-overflow-2   -Wstrict-overflow=2 -o CMakeFiles/cmTC_5b87f.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_5b87f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b87f.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wstrict-overflow-2    -rdynamic CMakeFiles/cmTC_5b87f.dir/src.cxx.o  -o cmTC_5b87f 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wctor-dtor-privacy succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_83b55/fast"
+/usr/bin/make -f CMakeFiles/cmTC_83b55.dir/build.make CMakeFiles/cmTC_83b55.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_83b55.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wctor-dtor-privacy   -Wctor-dtor-privacy -o CMakeFiles/cmTC_83b55.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_83b55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83b55.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wctor-dtor-privacy    -rdynamic CMakeFiles/cmTC_83b55.dir/src.cxx.o  -o cmTC_83b55 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wlogical-op succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_828f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_828f2.dir/build.make CMakeFiles/cmTC_828f2.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_828f2.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wlogical-op   -Wlogical-op -o CMakeFiles/cmTC_828f2.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_828f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_828f2.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wlogical-op    -rdynamic CMakeFiles/cmTC_828f2.dir/src.cxx.o  -o cmTC_828f2 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wnoexcept succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3bd70/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3bd70.dir/build.make CMakeFiles/cmTC_3bd70.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3bd70.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wnoexcept   -Wnoexcept -o CMakeFiles/cmTC_3bd70.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_3bd70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bd70.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wnoexcept    -rdynamic CMakeFiles/cmTC_3bd70.dir/src.cxx.o  -o cmTC_3bd70 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wnon-virtual-dtor succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ff920/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff920.dir/build.make CMakeFiles/cmTC_ff920.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ff920.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wnon-virtual-dtor   -Wnon-virtual-dtor -o CMakeFiles/cmTC_ff920.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_ff920
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff920.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wnon-virtual-dtor    -rdynamic CMakeFiles/cmTC_ff920.dir/src.cxx.o  -o cmTC_ff920 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wdelete-non-virtual-dtor succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3f546/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3f546.dir/build.make CMakeFiles/cmTC_3f546.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3f546.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wdelete-non-virtual-dtor   -Wdelete-non-virtual-dtor -o CMakeFiles/cmTC_3f546.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_3f546
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f546.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wdelete-non-virtual-dtor    -rdynamic CMakeFiles/cmTC_3f546.dir/src.cxx.o  -o cmTC_3f546 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-non-virtual-dtor succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00ffd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00ffd.dir/build.make CMakeFiles/cmTC_00ffd.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_00ffd.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-non-virtual-dtor   -Werror=non-virtual-dtor -o CMakeFiles/cmTC_00ffd.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_00ffd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00ffd.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-non-virtual-dtor    -rdynamic CMakeFiles/cmTC_00ffd.dir/src.cxx.o  -o cmTC_00ffd 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Werror-delete-non-virtual-dtor succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8eb1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8eb1.dir/build.make CMakeFiles/cmTC_c8eb1.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8eb1.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-delete-non-virtual-dtor   -Werror=delete-non-virtual-dtor -o CMakeFiles/cmTC_c8eb1.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_c8eb1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8eb1.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Werror-delete-non-virtual-dtor    -rdynamic CMakeFiles/cmTC_c8eb1.dir/src.cxx.o  -o cmTC_c8eb1 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wno-sign-compare succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c07c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c07c9.dir/build.make CMakeFiles/cmTC_c07c9.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c07c9.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-sign-compare   -Wno-sign-compare -o CMakeFiles/cmTC_c07c9.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_c07c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c07c9.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wno-sign-compare    -rdynamic CMakeFiles/cmTC_c07c9.dir/src.cxx.o  -o cmTC_c07c9 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wnull-dereference succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_597e9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_597e9.dir/build.make CMakeFiles/cmTC_597e9.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_597e9.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wnull-dereference   -Wnull-dereference -o CMakeFiles/cmTC_597e9.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_597e9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_597e9.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wnull-dereference    -rdynamic CMakeFiles/cmTC_597e9.dir/src.cxx.o  -o cmTC_597e9 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-fdelete-null-pointer-checks succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f87cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f87cc.dir/build.make CMakeFiles/cmTC_f87cc.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f87cc.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-fdelete-null-pointer-checks   -fdelete-null-pointer-checks -o CMakeFiles/cmTC_f87cc.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_f87cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f87cc.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-fdelete-null-pointer-checks    -rdynamic CMakeFiles/cmTC_f87cc.dir/src.cxx.o  -o cmTC_f87cc 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wduplicated-cond succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9c19d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9c19d.dir/build.make CMakeFiles/cmTC_9c19d.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c19d.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wduplicated-cond   -Wduplicated-cond -o CMakeFiles/cmTC_9c19d.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_9c19d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c19d.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wduplicated-cond    -rdynamic CMakeFiles/cmTC_9c19d.dir/src.cxx.o  -o cmTC_9c19d 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-Wmisleading-indentation succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_44b6e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_44b6e.dir/build.make CMakeFiles/cmTC_44b6e.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_44b6e.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-Wmisleading-indentation   -Wmisleading-indentation -o CMakeFiles/cmTC_44b6e.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_44b6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44b6e.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-Wmisleading-indentation    -rdynamic CMakeFiles/cmTC_44b6e.dir/src.cxx.o  -o cmTC_44b6e 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-fno-omit-frame-pointer succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6f96c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6f96c.dir/build.make CMakeFiles/cmTC_6f96c.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6f96c.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-fno-omit-frame-pointer   -fno-omit-frame-pointer -o CMakeFiles/cmTC_6f96c.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_6f96c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f96c.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-fno-omit-frame-pointer    -rdynamic CMakeFiles/cmTC_6f96c.dir/src.cxx.o  -o cmTC_6f96c 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test IS_SUPPORTED_-fno-optimize-sibling-calls succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7a00/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7a00.dir/build.make CMakeFiles/cmTC_d7a00.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7a00.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -DIS_SUPPORTED_-fno-optimize-sibling-calls   -fno-optimize-sibling-calls -o CMakeFiles/cmTC_d7a00.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+[01m[K<command-line>:0:14:[m[K [01;35m[Kwarning: [m[KISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_d7a00
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7a00.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -DIS_SUPPORTED_-fno-optimize-sibling-calls    -rdynamic CMakeFiles/cmTC_d7a00.dir/src.cxx.o  -o cmTC_d7a00 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aa04f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aa04f.dir/build.make CMakeFiles/cmTC_aa04f.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_aa04f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fdiagnostics-color=always -fPIC  -fPIE   -o CMakeFiles/cmTC_aa04f.dir/CheckIncludeFile.c.o   -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_aa04f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa04f.dir/link.txt --verbose=1
+/usr/bin/cc  -fdiagnostics-color=always -fPIC     -rdynamic CMakeFiles/cmTC_aa04f.dir/CheckIncludeFile.c.o  -o cmTC_aa04f 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69500/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69500.dir/build.make CMakeFiles/cmTC_69500.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_69500.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fdiagnostics-color=always -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_69500.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_69500
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69500.dir/link.txt --verbose=1
+/usr/bin/cc  -fdiagnostics-color=always -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_69500.dir/CheckFunctionExists.c.o  -o cmTC_69500 -lpthread 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+
+Performing C++ SOURCE FILE Test has_std_14_flag succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4a2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f4a2f.dir/build.make CMakeFiles/cmTC_f4a2f.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4a2f.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -fPIC -Dhas_std_14_flag -fPIE   -std=c++14 -std=gnu++14 -o CMakeFiles/cmTC_f4a2f.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f4a2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4a2f.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -fPIC -Dhas_std_14_flag    CMakeFiles/cmTC_f4a2f.dir/src.cxx.o  -o cmTC_f4a2f 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test has_std_1y_flag succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7c3fc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7c3fc.dir/build.make CMakeFiles/cmTC_7c3fc.dir/build
+make[1]: Entering directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7c3fc.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -fPIC -Dhas_std_1y_flag -fPIE   -std=c++1y -std=gnu++14 -o CMakeFiles/cmTC_7c3fc.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7c3fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c3fc.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -fPIC -Dhas_std_1y_flag    CMakeFiles/cmTC_7c3fc.dir/src.cxx.o  -o cmTC_7c3fc 
+make[1]: Leaving directory '/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test SUPPORTS_VARIADIC_TEMPLATES succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60935/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60935.dir/build.make CMakeFiles/cmTC_60935.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_60935.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -fPIC -DSUPPORTS_VARIADIC_TEMPLATES -std=c++14 -fPIE   -std=gnu++14 -o CMakeFiles/cmTC_60935.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_60935
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60935.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -fPIC -DSUPPORTS_VARIADIC_TEMPLATES -std=c++14    CMakeFiles/cmTC_60935.dir/src.cxx.o  -o cmTC_60935 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+  template <class T, class ...Types>
+  struct S { typedef typename S<Types...>::type type; };
+  int main() {}
+Performing C++ SOURCE FILE Test SUPPORTS_INITIALIZER_LIST succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_31628/fast"
+/usr/bin/make -f CMakeFiles/cmTC_31628.dir/build.make CMakeFiles/cmTC_31628.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_31628.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -fPIC -DSUPPORTS_INITIALIZER_LIST -std=c++14 -fPIE   -std=gnu++14 -o CMakeFiles/cmTC_31628.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_31628
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31628.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -fPIC -DSUPPORTS_INITIALIZER_LIST -std=c++14    CMakeFiles/cmTC_31628.dir/src.cxx.o  -o cmTC_31628 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+  #include <initializer_list>
+  int main() {}
+Performing C++ SOURCE FILE Test SUPPORTS_ENUM_BASE succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_725c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_725c3.dir/build.make CMakeFiles/cmTC_725c3.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_725c3.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -fPIC -DSUPPORTS_ENUM_BASE -std=c++14 -fPIE   -std=gnu++14 -o CMakeFiles/cmTC_725c3.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_725c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_725c3.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -fPIC -DSUPPORTS_ENUM_BASE -std=c++14    CMakeFiles/cmTC_725c3.dir/src.cxx.o  -o cmTC_725c3 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+  enum C : char {A};
+  int main() {}
+Performing C++ SOURCE FILE Test SUPPORTS_TYPE_TRAITS succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a32fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a32fe.dir/build.make CMakeFiles/cmTC_a32fe.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_a32fe.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -fPIC -DSUPPORTS_TYPE_TRAITS -std=c++14 -fPIE   -std=gnu++14 -o CMakeFiles/cmTC_a32fe.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a32fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a32fe.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -fPIC -DSUPPORTS_TYPE_TRAITS -std=c++14    CMakeFiles/cmTC_a32fe.dir/src.cxx.o  -o cmTC_a32fe 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+  #include <type_traits>
+  class C { void operator=(const C&); };
+  int main() { static_assert(!std::is_copy_assignable<C>::value, ""); }
+Performing C++ SOURCE FILE Test SUPPORTS_USER_DEFINED_LITERALS succeeded with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d09a7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d09a7.dir/build.make CMakeFiles/cmTC_d09a7.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_d09a7.dir/src.cxx.o
+/usr/bin/c++    -fdiagnostics-color=always -fPIC -DSUPPORTS_USER_DEFINED_LITERALS -std=c++14 -fPIE   -std=gnu++14 -o CMakeFiles/cmTC_d09a7.dir/src.cxx.o -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d09a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d09a7.dir/link.txt --verbose=1
+/usr/bin/c++   -fdiagnostics-color=always -fPIC -DSUPPORTS_USER_DEFINED_LITERALS -std=c++14    CMakeFiles/cmTC_d09a7.dir/src.cxx.o  -o cmTC_d09a7 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+  void operator"" _udl(long double);
+  int main() {}
+Determining if the open exist passed with the following output:
+Change Dir: /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f8ddb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8ddb.dir/build.make CMakeFiles/cmTC_f8ddb.dir/build
+make[1]: 进入目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f8ddb.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fdiagnostics-color=always -fPIC  -fPIE   -o CMakeFiles/cmTC_f8ddb.dir/CheckSymbolExists.c.o   -c /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f8ddb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8ddb.dir/link.txt --verbose=1
+/usr/bin/cc  -fdiagnostics-color=always -fPIC     CMakeFiles/cmTC_f8ddb.dir/CheckSymbolExists.c.o  -o cmTC_f8ddb 
+make[1]: 离开目录“/home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp”
+
+File /home/gridteam/workplace/TetWild/cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef open
+  return ((int*)(&open))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

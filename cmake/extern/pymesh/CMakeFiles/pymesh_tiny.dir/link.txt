@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpymesh_tiny.a  CMakeFiles/pymesh_tiny.dir/MshLoader.cpp.o CMakeFiles/pymesh_tiny.dir/MshSaver.cpp.o
+/usr/bin/ranlib libpymesh_tiny.a
