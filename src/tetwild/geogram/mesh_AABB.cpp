@@ -486,7 +486,7 @@ namespace GEO {
     ) const {
         geo_debug_assert(e > b);
 
-        if (sq_dist <= sq_epsilon) {
+        if (sq_dist <= sq_epsilon) { // 已经在包络内了，返回即可
             return;
         }
 

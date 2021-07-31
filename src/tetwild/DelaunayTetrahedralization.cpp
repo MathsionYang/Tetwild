@@ -307,7 +307,7 @@ void DelaunayTetrahedralization::tetra(const std::vector<Point_3>& m_vertices, G
     }
     ///add voxel points
     std::vector<Point_d> voxel_points;
-    if(!args.not_use_voxel_stuffing) {
+    if(!args.not_use_voxel_stuffing) { // 得到Voxel点，其实就是在box里按理想长度标准等距插入点，插入点不能离原始的surface面很近
         getVoxelPoints(p_min, p_max, geo_surface_mesh, voxel_points, args, state);
     }
     for(int i=0;i<voxel_points.size();i++) {
@@ -338,7 +338,7 @@ void DelaunayTetrahedralization::tetra(const std::vector<Point_3>& m_vertices, G
     std::sort(cells.begin(), cells.end());
     for(int i=0;i<cells.size();i++) {
         for (int j = 0; j < 4; j++)
-            conn_n_ids[cells[i][j]].push_back(i);
+            conn_n_ids[cells[i][j]].push_back(i); // 每个点对应的四面体的id
     }
 
     //get bsp faces
@@ -358,7 +358,7 @@ void DelaunayTetrahedralization::tetra(const std::vector<Point_3>& m_vertices, G
     std::sort(faces.begin(), faces.end());
     for(int i=0;i<faces.size();i++) {
         for (int j = 0; j < 3; j++)
-            conn_f_ids[faces[i][j]].push_back(i);
+            conn_f_ids[faces[i][j]].push_back(i); // 点对应面的id
     }
 
     //get bsp edges
@@ -396,6 +396,7 @@ void DelaunayTetrahedralization::tetra(const std::vector<Point_3>& m_vertices, G
         //conn_nodes
         std::vector<int> tmp;
         //no need to sort before intersection because elements have been sorted
+        // 求与该面片相邻的四面体的索引，也就是面的正反相邻的四面体的id
         std::set_intersection(conn_n_ids[f[0]].begin(), conn_n_ids[f[0]].end(),
                               conn_n_ids[f[1]].begin(), conn_n_ids[f[1]].end(),
                               std::back_inserter(tmp));
@@ -404,7 +405,7 @@ void DelaunayTetrahedralization::tetra(const std::vector<Point_3>& m_vertices, G
                               std::inserter(bsp_faces[i].conn_nodes, bsp_faces[i].conn_nodes.begin()));
         //faces for nodes
         for (auto it = bsp_faces[i].conn_nodes.begin(); it != bsp_faces[i].conn_nodes.end(); it++) {
-            bsp_nodes[*it].faces.push_back(i);
+            bsp_nodes[*it].faces.push_back(i); // 每个四面体对应的面的id
         }
     }
 
@@ -414,12 +415,13 @@ void DelaunayTetrahedralization::tetra(const std::vector<Point_3>& m_vertices, G
         //vertices
         bsp_edges[i].vertices = {{e[0], e[1]}};
         //conn_faces
+        // 求与该边相邻的面的id
         std::set_intersection(conn_f_ids[e[0]].begin(), conn_f_ids[e[0]].end(),
                               conn_f_ids[e[1]].begin(), conn_f_ids[e[1]].end(),
                               std::inserter(bsp_edges[i].conn_faces, bsp_edges[i].conn_faces.begin()));
         //edges for faces
         for (auto it = bsp_edges[i].conn_faces.begin(); it != bsp_edges[i].conn_faces.end(); it++) {
-            bsp_faces[*it].edges.push_back(i);
+            bsp_faces[*it].edges.push_back(i); // 每个面对应的边的id
         }
     }
 #endif

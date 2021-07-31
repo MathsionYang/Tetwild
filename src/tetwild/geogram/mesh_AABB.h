@@ -197,7 +197,7 @@ namespace GEO {
          * within a given distance bound from the triangle mesh.
          */
         void facet_in_envelope_with_hint(
-            const vec3& p, double sq_epsilon,
+            const vec3& p, double sq_epsilon, // p 是当前检查的点，
             index_t& nearest_facet, vec3& nearest_point, double& sq_dist
         ) const {
             if(nearest_facet == NO_FACET) {

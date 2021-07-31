@@ -189,7 +189,7 @@ void Preprocess::getBoundaryMesh(GEO::Mesh& b_mesh) {
             p[j] = V_sf(v_id, j);
     }
     b_mesh.facets.clear();
-    b_mesh.facets.create_triangles((int) b_edges.size());
+    b_mesh.facets.create_triangles((int) b_edges.size()); // 边界网格面片保存的是一个点，和另外两个相同的点，面积为0
     for (int i = 0; i < b_edges.size(); i++) {
         b_mesh.facets.set_vertex(i, 0, v_ids_map[b_edges[i][0]]);
         b_mesh.facets.set_vertex(i, 1, v_ids_map[b_edges[i][1]]);
@@ -210,35 +210,36 @@ void Preprocess::process(GEO::Mesh& geo_sf_mesh, std::vector<Point_3>& m_vertice
         for (int j = 0; j < 3; j++)
             conn_fs[F_in(i, j)].insert(i);
     }
-    v_is_removed = std::vector<bool>(V_in.rows(), false);
-    f_is_removed = std::vector<bool>(F_in.rows(), false);
+    v_is_removed = std::vector<bool>(V_in.rows(), false); // 要删除的点
+    f_is_removed = std::vector<bool>(F_in.rows(), false); // 要删除的面片
 
     // mesh_reorder(geo_sf_mesh, GEO::MESH_ORDER_HILBERT);
-    GEO::MeshFacetsAABBWithEps geo_face_tree(geo_sf_mesh);
+    GEO::MeshFacetsAABBWithEps geo_face_tree(geo_sf_mesh); // 对表面网格面片创建AABB树
 
     std::vector<std::array<int, 2>> edges;
-    edges.reserve(F_in.rows()*6); // 
+    edges.reserve(F_in.rows()*6); // 初始化edges的空间，实际上只用到了 F_in.rows() * 3
     for (int i = 0; i < F_in.rows(); i++) {
         for (int j = 0; j < 3; j++) {
             std::array<int, 2> e = {{F_in(i, j), F_in(i, (j + 1) % 3)}};
             if (e[0] > e[1]) e = {{e[1], e[0]}};
-            edges.push_back(e);
+            edges.push_back(e); // id 从小到大
         }
     }
     std::sort(edges.begin(), edges.end());
-    edges.erase(std::unique(edges.begin(), edges.end()), edges.end());
+    edges.erase(std::unique(edges.begin(), edges.end()), edges.end()); // 对边去重
 
     const int edges_size = edges.size();
     for (int i = 0; i < edges_size; i++) {
-        double weight = getEdgeLength(edges[i]);
+        double weight = getEdgeLength(edges[i]); // 得到边的长度
         sm_queue.push(ElementInQueue_sm(edges[i], weight));
         sm_queue.push(ElementInQueue_sm(std::array<int, 2>({{edges[i][1], edges[i][0]}}), weight));
     }
+    // sm_queue 优先级队列，先按边的长度从大到小，边的长度一样则按点的id从小到大
 
     //simplification
     ts = 0;
     f_tss.resize(F_in.size());
-    simplify(geo_sf_mesh, geo_face_tree);
+    simplify(geo_sf_mesh, geo_face_tree); // 简化，合并可以合并的二边流形的边
 
     ////get CGAL surface mesh
     int cnt = 0;
@@ -251,7 +252,7 @@ void Preprocess::process(GEO::Mesh& geo_sf_mesh, std::vector<Point_3>& m_vertice
     for (int i = 0; i < V_in.rows(); i++) {
         if (v_is_removed[i])
             continue;
-        new_v_ids[i] = cnt;
+        new_v_ids[i] = cnt; // 新点的新id
         V_out.row(cnt++) = V_in.row(i);
     }
 
@@ -275,13 +276,13 @@ void Preprocess::process(GEO::Mesh& geo_sf_mesh, std::vector<Point_3>& m_vertice
         for (int j = 0; j < 3; j++)
             conn_fs[F_in(i, j)].insert(i);
     }
-    swap(geo_sf_mesh, geo_face_tree);
+    swap(geo_sf_mesh, geo_face_tree); // swap交换
     if(args.save_mid_result == 0)
         igl::writeSTL(state.working_dir+state.postfix+"_simplified.stl", V_in, F_in);
 
 //    checkBoundary(V_in, F_in);
 
-    m_vertices.reserve(V_in.rows());
+    m_vertices.reserve(V_in.rows()); /// 预分配内存空间，节约时间
     m_faces.reserve(F_in.rows());
     for (int i = 0; i < V_in.rows(); i++) {
         m_vertices.push_back(Point_3(V_in(i, 0), V_in(i, 1), V_in(i, 2)));
@@ -345,18 +346,18 @@ void Preprocess::swap(const GEO::Mesh &geo_mesh, const GEO::MeshFacetsAABBWithEp
             }
             if (cos_a > -0.999) {
 //                continue;
-                if (GEO::Geom::cos_angle(old_nvs[0], old_nvs[1]) < 1-1e-6)//not coplanar
+                if (GEO::Geom::cos_angle(old_nvs[0], old_nvs[1]) < 1-1e-6)//not coplanar 因为不是平面，所以不能对角交换
                     continue;
             }
-            double cos_a_new = getCosAngle(v1_id, v_id, v3_id);
+            double cos_a_new = getCosAngle(v1_id, v_id, v3_id); // 对角交换之后新的夹角
             double cos_a1_new = getCosAngle(v2_id, v_id, v3_id);
-            if (std::min(cos_a_new, cos_a1_new) <= std::min(cos_a, cos_a1))
+            if (std::min(cos_a_new, cos_a1_new) <= std::min(cos_a, cos_a1)) // 交换之后还不如之前的，所以不继续进行交换
                 continue;
 
             // non flipping
             Eigen::RowVectorXi f1_old = F_in.row(n12_f_ids[0]);
             Eigen::RowVectorXi f2_old = F_in.row(n12_f_ids[1]);
-            for (int k = 0; k < 3; k++) {
+            for (int k = 0; k < 3; k++) { // 修改拓扑，flipping
                 if (F_in(n12_f_ids[0], k) == v2_id)
                     F_in(n12_f_ids[0], k) = v3_id;
                 if (F_in(n12_f_ids[1], k) == v1_id)
@@ -422,9 +423,9 @@ void Preprocess::simplify(const GEO::Mesh &geo_mesh, const GEO::MeshFacetsAABBWi
         if (!isEdgeValid(v_ids, old_weight)) // 检测当前边是否是有效的，1. 判断是否已经被删除了 2. 判断是否有公共三角面片 3. 判断是否已经被废弃了
             continue;
 
-        if (!removeAnEdge(v_ids[0], v_ids[1], geo_mesh, face_aabb_tree)) {
-            inf_es.push_back(v_ids);
-            inf_e_tss.push_back(ts);
+        if (!removeAnEdge(v_ids[0], v_ids[1], geo_mesh, face_aabb_tree)) { // 删除可以删除的二边流形的边，删除之后还在envelope内同时拓扑正确则称为可删除
+            inf_es.push_back(v_ids); // 未删除的边
+            inf_e_tss.push_back(ts); // 
         } else {
             cnt++;
             if (cnt % 1000 == 0)
@@ -442,12 +443,12 @@ void Preprocess::postProcess(const GEO::Mesh &geo_mesh, const GEO::MeshFacetsAAB
     logger().debug("postProcess!");
 
     std::vector<std::array<int, 2>> tmp_inf_es;
-    const int inf_es_size = inf_es.size();
+    const int inf_es_size = inf_es.size(); // 不能删除的边
     for (int i = 0; i < inf_es_size; i++) {
-        if (!isEdgeValid(inf_es[i]))
+        if (!isEdgeValid(inf_es[i])) // 
             continue;
         bool is_recal = false;
-        for (int f_id:conn_fs[inf_es[i][0]]) {
+        for (int f_id:conn_fs[inf_es[i][0]]) { // 根据时间戳判断当前边上的点的周围的拓扑有没有改变，如果改变了那么就把这条原来不能删除的边继续放入队列中，直到所有的点都达到“平衡”
             if (f_tss[f_id] > inf_e_tss[i]) {
                 is_recal = true;
                 break;
@@ -468,13 +469,15 @@ void Preprocess::postProcess(const GEO::Mesh &geo_mesh, const GEO::MeshFacetsAAB
 }
 
 bool Preprocess::removeAnEdge(int v1_id, int v2_id, const GEO::Mesh &geo_mesh, const GEO::MeshFacetsAABBWithEps& face_aabb_tree) {
-    if (!isOneRingClean(v1_id) || !isOneRingClean(v2_id))
-        return false;
+    if (!isOneRingClean(v1_id) || !isOneRingClean(v2_id)) // 非二边流形，不管
+        return false; // 不删除
+    
+    logger().debug("re");
 
     //check if flip after collapsing
     std::vector<int> n12_f_ids;
     setIntersection(conn_fs[v1_id], conn_fs[v2_id], n12_f_ids);
-    if (n12_f_ids.size() != 2) {//!!! 
+    if (n12_f_ids.size() != 2) {//!!! 非二边流形，不管
 //        logger().debug("error: n12_f_ids.size()!=2");
         return false;
     }
@@ -490,9 +493,10 @@ bool Preprocess::removeAnEdge(int v1_id, int v2_id, const GEO::Mesh &geo_mesh, c
             new_f_ids.insert(f_id);
         }
     }
+    // new_f_ids ： 保存两点非公共的面的id 
 
-    //check euclidean characteristics (delete degenerate and duplicate elements
-    if(!isEuclideanValid(v1_id, v2_id))
+    //check euclidean characteristics (delete degenerate and duplicate elements // 删除退化和重复的单元
+    if(!isEuclideanValid(v1_id, v2_id)) // 判断删除点 v1_id ，也就是合并边 Edge( v1_id, v2_id ) 之后是否满足欧拉定理，不满足欧拉定理则该边不可以删除
         return false;
 
     //computing normal for checking flipping
@@ -500,10 +504,10 @@ bool Preprocess::removeAnEdge(int v1_id, int v2_id, const GEO::Mesh &geo_mesh, c
 //    for(int f_id:conn_fs[v1_id]) {
 //        if (f_id != n12_f_ids[0] && f_id != n12_f_ids[1]) {
         std::array<GEO::vec3, 3> vs;
-        for (int j = 0; j < 3; j++) {
-            vs[j] = GEO::vec3(V_in(F_in(f_id, j), 0), V_in(F_in(f_id, j), 1), V_in(F_in(f_id, j), 2));
+        for (int j = 0; j < 3; j++) { // 取出面片 f_id 的三个顶点的坐标，分别为 vs[0], vs[1], vs[2]. 
+            vs[j] = GEO::vec3(V_in(F_in(f_id, j), 0), V_in(F_in(f_id, j), 1), V_in(F_in(f_id, j), 2)); // V_in n * 3 , F_in n * 3
         }
-        GEO::vec3 old_nv = GEO::Geom::triangle_normal(vs[0], vs[1], vs[2]);
+        GEO::vec3 old_nv = GEO::Geom::triangle_normal(vs[0], vs[1], vs[2]); // 面法向
 
         for (int j = 0; j < 3; j++) {
 //                if (F_in(f_id, j) == v1_id) {
@@ -515,12 +519,12 @@ bool Preprocess::removeAnEdge(int v1_id, int v2_id, const GEO::Mesh &geo_mesh, c
         }
         GEO::vec3 new_nv = GEO::Geom::triangle_normal(vs[0], vs[1], vs[2]);
         if (GEO::dot(old_nv, new_nv) < 0)
-            return false;
+            return false; // 合并之后法向变化太大，不能删除
 //        }
     }
 
-    //check if go outside of envelop
-    Eigen::VectorXd v1_old_p = V_in.row(v1_id);
+    //check if go outside of envelop // 检查是否合并边后还在包络内
+    Eigen::VectorXd v1_old_p = V_in.row(v1_id); // 
     Eigen::VectorXd v2_old_p = V_in.row(v2_id);
     V_in.row(v1_id) = (V_in.row(v1_id) + V_in.row(v2_id)) / 2;
     GEO::vec3 mid_p(V_in(v1_id, 0), V_in(v1_id, 1), V_in(v1_id, 2));
@@ -528,9 +532,9 @@ bool Preprocess::removeAnEdge(int v1_id, int v2_id, const GEO::Mesh &geo_mesh, c
     double _;
     face_aabb_tree.nearest_facet(mid_p, nearest_p, _);//project back to surface
     for(int j=0;j<3;j++)
-        V_in(v1_id, j) = nearest_p[j];
+        V_in(v1_id, j) = nearest_p[j]; // 投影回原来的曲面
     V_in.row(v2_id) = V_in.row(v1_id);
-    if (isOutEnvelop(new_f_ids, geo_mesh, face_aabb_tree)) {
+    if (isOutEnvelop(new_f_ids, geo_mesh, face_aabb_tree)) { // 如果出去了包络，则不能删除该边，返回 false
         V_in.row(v1_id) = v1_old_p;
         V_in.row(v2_id) = v2_old_p;
         return false;
@@ -542,12 +546,12 @@ bool Preprocess::removeAnEdge(int v1_id, int v2_id, const GEO::Mesh &geo_mesh, c
     for (int f_id:new_f_ids) {
         for (int j = 0; j < 3; j++) {
             if (F_in(f_id, j) != v1_id && F_in(f_id, j) != v2_id)
-                n_v_ids.insert(F_in(f_id, j));
+                n_v_ids.insert(F_in(f_id, j)); // 得到要删除的边的两个点的一阶邻近的所有的点。
         }
     }
 
     v_is_removed[v1_id] = true;
-    for (int f_id:n12_f_ids) {
+    for (int f_id:n12_f_ids) { // 边相邻的三角面片的id
         f_is_removed[f_id] = true;
         for (int j = 0; j < 3; j++) {//rm conn_fs
             if (F_in(f_id, j) != v1_id) {
@@ -570,7 +574,7 @@ bool Preprocess::removeAnEdge(int v1_id, int v2_id, const GEO::Mesh &geo_mesh, c
 
     //update timestamps
     ts++;
-    for (int f_id:conn_fs[v2_id]) {
+    for (int f_id:conn_fs[v2_id]) { // 
         f_tss[f_id] = ts;
     }
 
@@ -633,14 +637,14 @@ bool Preprocess::isOneRingClean(int v1_id){
     for (int i = 0; i < n1_es.size(); i += 2) {
         if (n1_es[i][0] == n1_es[i + 1][0] && n1_es[i][1] != n1_es[i + 1][1]);
         else
-            return false;
+            return false; 
     }
 
     return true;
 }
 
 
-bool Preprocess::isOutEnvelop(const std::unordered_set<int>& new_f_ids,
+bool Preprocess::isOutEnvelop(const std::unordered_set<int>& new_f_ids, // 判断当前这些面片是否都在包络外，是就返回ture，否则返回false
     const GEO::Mesh &geo_sf_mesh, const GEO::MeshFacetsAABBWithEps& geo_face_tree)
 {
     size_t num_querried = 0;
@@ -656,7 +660,7 @@ bool Preprocess::isOutEnvelop(const std::unordered_set<int>& new_f_ids,
                 GEO::vec3(V_in(F_in(f_id, 1), 0), V_in(F_in(f_id, 1), 1), V_in(F_in(f_id, 1), 2)),
                 GEO::vec3(V_in(F_in(f_id, 2), 0), V_in(F_in(f_id, 2), 1), V_in(F_in(f_id, 2), 2))}};
         ps.clear();
-        sampleTriangle(vs, ps, state.sampling_dist);
+        sampleTriangle(vs, ps, state.sampling_dist); // 对三角形vs采样出来的点为 ps  vector<GEO::vec3>
         ++tri_idx;
         num_samples += ps.size();
 
@@ -721,19 +725,19 @@ bool Preprocess::isOutEnvelop(const std::unordered_set<int>& new_f_ids,
 
         //check sampling points
         GEO::vec3 nearest_point;
-        double sq_dist = std::numeric_limits<double>::max();
+        double sq_dist = std::numeric_limits<double>::max(); // double的最大值
         GEO::index_t prev_facet = GEO::NO_FACET;
 
-        for (const GEO::vec3 &current_point:ps) {
-            if (prev_facet != GEO::NO_FACET) {
+        for (const GEO::vec3 &current_point:ps) { // 对于每个采样点
+            if (prev_facet != GEO::NO_FACET) { // 能用上次的三角面片就用上次的面片，如果距离上次的面片的距离已经在envelope内了，就不用重新找最新的最近的面片了，可以节约时间。
                 get_point_facet_nearest_point(geo_sf_mesh, current_point, prev_facet, nearest_point, sq_dist);
             }
-            if (sq_dist > state.eps_2) {
+            if (sq_dist > state.eps_2) { // 当前点距离上次的三角面片的距离是超出了 envelope，则继续找最近的三角面片。
                 geo_face_tree.facet_in_envelope_with_hint(
                     current_point, state.eps_2, prev_facet, nearest_point, sq_dist);
             }
             ++num_querried;
-            if (sq_dist > state.eps_2) {
+            if (sq_dist > state.eps_2) { // 不在包络内
                 logger().trace("num_triangles {} / {} num_queries {} / {}",
                     tri_idx - 1, num_tris, num_querried, num_samples);
                 return true;
@@ -752,7 +756,7 @@ bool Preprocess::isPointOutEnvelop(int v_id, const GEO::MeshFacetsAABBWithEps& g
     return false;
 }
 
-int calEuclidean(const std::vector<std::array<int, 3>>& fs){
+int calEuclidean(const std::vector<std::array<int, 3>>& fs){ // 点个数 - 边个数 + 面个数
     std::vector<std::array<int, 2>> es;
     es.reserve(fs.size()*3);
     std::unordered_set<int> vs;
@@ -771,7 +775,7 @@ int calEuclidean(const std::vector<std::array<int, 3>>& fs){
     return vs.size()-es.size()+fs.size();
 }
 
-bool Preprocess::isEuclideanValid(int v1_id, int v2_id){
+bool Preprocess::isEuclideanValid(int v1_id, int v2_id){ // 判断删除点 v1_id ，也就是合并边 Edge( v1_id, v2_id ) 之后是否满足欧拉定理
 //    logger().debug("v1:{}", v1_id);
 //    for (int f_id:conn_fs[v1_id]) {
 //        logger().debug("{}{}{} {}", F_in(f_id, 0), ' ', F_in(f_id, 1), F_in(f_id, 2));
@@ -781,21 +785,21 @@ bool Preprocess::isEuclideanValid(int v1_id, int v2_id){
 //        logger().debug("{}{}{} {}", F_in(f_id, 0), ' ', F_in(f_id, 1), F_in(f_id, 2));
 //    }
 
-    std::vector<std::array<int, 3>> fs;
+    std::vector<std::array<int, 3>> fs; // v1_id, v2_id 相连的面片，每个面片保存三个顶点的索引
     for(int I=0;I<2;I++) {
         int v_id = I == 0 ? v1_id : v2_id;
         for (int f_id:conn_fs[v_id]) {
-            if (F_in(f_id, 0) != F_in(f_id, 1) && F_in(f_id, 1) != F_in(f_id, 2) && F_in(f_id, 0) != F_in(f_id, 2)) {
-                std::array<int, 3> f = {{F_in(f_id, 0), F_in(f_id, 1), F_in(f_id, 2)}};
-                std::sort(f.begin(), f.end());
-                fs.push_back(f);
+            if (F_in(f_id, 0) != F_in(f_id, 1) && F_in(f_id, 1) != F_in(f_id, 2) && F_in(f_id, 0) != F_in(f_id, 2)) { // 保证不是退化的面
+                std::array<int, 3> f = {{F_in(f_id, 0), F_in(f_id, 1), F_in(f_id, 2)}}; // 保存面
+                std::sort(f.begin(), f.end()); // 面片顶点索引从小到大排序
+                fs.push_back(f); 
             }
         }
     }
-    std::sort(fs.begin(), fs.end());
+    std::sort(fs.begin(), fs.end()); // 对相邻的所有的面片进行排序和去重
     fs.erase(std::unique(fs.begin(), fs.end()), fs.end());
 //    logger().debug("fs.size() = {}", fs.size());
-    int ec0=calEuclidean(fs);
+    int ec0=calEuclidean(fs); // 点个数 - 边个数 + 面个数  为什么点没有去重 ???
 //    logger().debug("{}", ec0);
 
     std::vector<std::array<int, 3>> fs1;
@@ -807,7 +811,7 @@ bool Preprocess::isEuclideanValid(int v1_id, int v2_id){
             }
         }
 //        logger().debug("{} {} {}", fs[i][0], fs[i][1], fs[i][2]);
-        if(fs[i][0]!=fs[i][1]&&fs[i][1]!=fs[i][2]&&fs[i][0]!=fs[i][2]){
+        if(fs[i][0]!=fs[i][1]&&fs[i][1]!=fs[i][2]&&fs[i][0]!=fs[i][2]){ // 把点 v1_id 删除之后是否是非退化单元
             std::array<int, 3> f = {{fs[i][0], fs[i][1], fs[i][2]}};
             std::sort(f.begin(), f.end());
             fs1.push_back(f);

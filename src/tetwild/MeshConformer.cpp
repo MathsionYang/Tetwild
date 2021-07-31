@@ -24,7 +24,7 @@ void MeshConformer::matchVertexIndices(int x, const std::vector<std::array<int, 
                                        std::vector<int>& f_list) {
     int seed_id;
     int l = 0, r = seed_v_list.size() - 1;
-    while (l < r) {
+    while (l < r) { // 找到的是第一个等于x的索引l
         int mid = (l + r) / 2;
         if (seed_v_list[mid][0] < x)
             l = mid + 1;
@@ -34,7 +34,7 @@ void MeshConformer::matchVertexIndices(int x, const std::vector<std::array<int, 
     if (r >= l && seed_v_list[l][0]==x) {
         f_list.push_back(seed_v_list[l][1]);
         int s = l - 1;
-        while (s >= 0) {
+        while (s >= 0) { // 实际没有用
             if (seed_v_list[s][0] == x)
                 f_list.push_back(seed_v_list[s][1]);
             else
@@ -54,8 +54,8 @@ void MeshConformer::matchVertexIndices(int x, const std::vector<std::array<int, 
 
 
 void MeshConformer::matchDivFaces() {
-    std::vector<std::array<int, 2>> seed_v_list;
-    seed_v_list.reserve(bsp_faces.size() * 3);
+    std::vector<std::array<int, 2>> seed_v_list; // （点id， 对应面id）
+    seed_v_list.reserve(bsp_faces.size() * 3); // bsp_face 是DT之后所有的面片
     for (int i = 0; i < bsp_faces.size(); i++) {
         for (int j = 0; j < 3; j++)
             seed_v_list.push_back(std::array<int, 2>({{bsp_faces[i].vertices[j], i}}));
@@ -67,6 +67,7 @@ void MeshConformer::matchDivFaces() {
     const int m_faces_size = m_faces.size();
     for (int i = 0; i < m_faces_size; i++) {
         int m_f_id = i;
+        // my_face对应的三角面片
         std::array<Point_3, 3> tri1 = {{m_vertices[m_faces[i][0]], m_vertices[m_faces[i][1]], m_vertices[m_faces[i][2]]}};
 
         ///find seed info
@@ -75,11 +76,12 @@ void MeshConformer::matchDivFaces() {
         is_matched[i] = true;
         for (int j = 0; j < 3; j++) {
             std::vector<int> f_list;
-            matchVertexIndices(m_faces[i][j], seed_v_list, f_list);
+            // 对简化之后的三角面片，即m_faces，的所有顶点，找到在DT之后的这些顶点对应的面的id
+            matchVertexIndices(m_faces[i][j], seed_v_list, f_list); // f_list 保存的是点 m_faces[i][j] 对应的 DT 之后的包含该点的面的id 
             if (f_list.size() == 0)
-                is_matched[i] = false;
+                is_matched[i] = false; // 该点没有匹配上
             for (int k = 0; k < f_list.size(); k++)
-                seed_fids.insert(f_list[k]);
+                seed_fids.insert(f_list[k]); // 所有面片的id
             if (is_matched[i])//possibly matched
                 f_lists.push_back(f_list);
         }
@@ -87,7 +89,7 @@ void MeshConformer::matchDivFaces() {
             is_matched[i] = false;
             for (int j = 0; j < f_lists.size(); j++)
                 std::sort(f_lists[j].begin(), f_lists[j].end());
-            std::vector<int> tmp, tmp1;
+            std::vector<int> tmp, tmp1; // tmp1 保存的是my_face中第i个三角面片中的三个点对应的在DT之后的三角面片的id的交集
             std::set_intersection(f_lists[0].begin(), f_lists[0].end(), f_lists[1].begin(), f_lists[1].end(),
                                   std::back_inserter(tmp));
             std::set_intersection(tmp.begin(), tmp.end(), f_lists[2].begin(), f_lists[2].end(),
@@ -108,29 +110,29 @@ void MeshConformer::matchDivFaces() {
         }
         for (auto it = seed_fids.begin(); it != seed_fids.end(); it++)
             for (auto jt = bsp_faces[*it].conn_nodes.begin(); jt != bsp_faces[*it].conn_nodes.end(); jt++)
-                seed_nids.insert(*jt);
-
+                seed_nids.insert(*jt); // seed_nids，找到my_face中的三个点各自对应的三角面片各自对应的前后四面体的id
+// 三角形指的是 my_face 中的一个三角面片 ；
         for (auto it = seed_fids.begin(); it != seed_fids.end(); it++) {
             ////cal intersection type
             std::array<Point_3, 3> tri2 = {{bsp_vertices[bsp_faces[*it].vertices[0]],
                                             bsp_vertices[bsp_faces[*it].vertices[1]],
                                             bsp_vertices[bsp_faces[*it].vertices[2]]}};
-            int int_type = triangleIntersection3d(tri1, tri2, true);
+            int int_type = triangleIntersection3d(tri1, tri2, true); // 判断两个三角形的位置关系，是共面还是相交，还是无关系，只是有一个公共的点
             if (int_type == COPLANAR_INT) {
                 bsp_faces[*it].div_faces.insert(i);
             } else if (int_type == CROSS_INT) {
                 for (auto nit = bsp_faces[*it].conn_nodes.begin(); nit != bsp_faces[*it].conn_nodes.end(); nit++)
-                    bsp_nodes[*nit].div_faces.insert(i);
+                    bsp_nodes[*nit].div_faces.insert(i); // 找到于三角形相交的面对应的四面体，这些四面体是要被三角形所分割的
             }
         }
 
         ///dfs all the info
         std::unordered_set<int> new_fids;
-        std::unordered_set<int> new_nids = seed_nids;
+        std::unordered_set<int> new_nids = seed_nids; // 和my_face中的三角形的三个点相关的四面体的id
         while (true) {
             new_fids.clear();
-            for (auto it = new_nids.begin(); it != new_nids.end(); it++) {
-                for (int j = 0; j < bsp_nodes[*it].faces.size(); j++) {
+            for (auto it = new_nids.begin(); it != new_nids.end(); it++) { // 遍历三角形三个顶点相连的所有四面体
+                for (int j = 0; j < bsp_nodes[*it].faces.size(); j++) { // 遍历四面体对应四个面
                     int bsp_f_id = bsp_nodes[*it].faces[j];
                     auto fit = std::find(seed_fids.begin(), seed_fids.end(), bsp_f_id);
                     if (fit == seed_fids.end()) {
@@ -237,13 +239,13 @@ int MeshConformer::triangleIntersection3d(const std::array<Point_3, 3>& tri1, co
             return NONE_INT;
     }
 
-    Plane_3 pln1(tri1[0], tri1[1], tri1[2]);
+    Plane_3 pln1(tri1[0], tri1[1], tri1[2]);// my_face 中的 face
     Plane_3 pln2(tri2[0], tri2[1], tri2[2]);
 
     std::vector<Point_3> pos_vs1, neg_vs1, on_vs1;
     triangleSideofPlane(tri1, pln2, pos_vs1, neg_vs1, on_vs1);
 
-    ///coplanar
+    ///coplanar 共面
     if (on_vs1.size() == 3) {
 //        if (!intersect_known) {
 //            Triangle_3 t1(tri1[0], tri1[1], tri1[2]);
@@ -256,7 +258,7 @@ int MeshConformer::triangleIntersection3d(const std::array<Point_3, 3>& tri1, co
             return COPLANAR_INT;
     }
 
-    ///on one side
+    ///on one side 在一侧
     if (pos_vs1.size() == 0 || neg_vs1.size() == 0) {
 //        if(intersect_known)
             return POINT_INT;
@@ -269,7 +271,7 @@ int MeshConformer::triangleIntersection3d(const std::array<Point_3, 3>& tri1, co
 //            return NONE_INT;
     }
 
-    ///cross
+    ///cross 穿过
     std::vector<Point_3> pos_vs2, neg_vs2, on_vs2;
     triangleSideofPlane(tri2, pln1, pos_vs2, neg_vs2, on_vs2);
     if (pos_vs2.size() == 0 || neg_vs2.size() == 0) {
@@ -335,7 +337,12 @@ int MeshConformer::triangleIntersection3d(const std::array<Point_3, 3>& tri1, co
 //        else
 //            return POINT_INT;
 //    } else {
-        if (sorted_vs[1].first != sorted_vs[2].first)
+    // 左边的三角形反转90°的情况就是 sorted_vs[1].first == sorted_vs[2].first 的情况，此时并不真正相交
+    // |\  /|
+    // | \/ |
+    // | /\ |
+    // |/  \|
+        if (sorted_vs[1].first != sorted_vs[2].first) // 如果相等就是两个面只相交于一个顶点，
             return CROSS_INT;
         else
             return POINT_INT;

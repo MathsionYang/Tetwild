@@ -18,9 +18,9 @@
 namespace tetwild {
 
 inline void get_point_facet_nearest_point(
-    const GEO::Mesh& M,
-    const GEO::vec3& p,
-    GEO::index_t f,
+    const GEO::Mesh& M, // 表面网格
+    const GEO::vec3& p, // 当前的采样点
+    GEO::index_t f, // 三角面片的id
     GEO::vec3& nearest_p,
     double& squared_dist
 ) {

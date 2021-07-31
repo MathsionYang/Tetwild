@@ -165,7 +165,7 @@ void sampleTriangle(const std::array<GEO::vec3, 3>& vs, std::vector<GEO::vec3>& 
     GEO::vec3 v2 = vs[(max_i + 2) % 3];
 
     GEO::vec3 n_v0v1 = GEO::normalize(v1 - v0);
-    for (int n = 0; n <= N; n++) {
+    for (int n = 0; n <= N; n++) { // 对最长的边进行采样
         ps.push_back(v0 + n_v0v1 * sampling_dist * n);
     }
     ps.push_back(v1);

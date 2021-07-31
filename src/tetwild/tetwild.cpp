@@ -174,8 +174,8 @@ double tetwild_stage_one_preprocess(
     const Eigen::MatrixXi &FI,
     const Args &args,
     State &state,
-    GEO::Mesh &geo_sf_mesh,
-    GEO::Mesh &geo_b_mesh,
+    GEO::Mesh &geo_sf_mesh, // 几何初始的表面网格
+    GEO::Mesh &geo_b_mesh, // 几何边界网格（对于有洞的表面网格才存在）
     std::vector<Point_3> &m_vertices,
     std::vector<std::array<int, 3>> &m_faces)
 {
@@ -185,7 +185,7 @@ double tetwild_stage_one_preprocess(
     Preprocess pp(state);
     // geo_b_mesh 保存边界网格
     // geo_sf_mesh 保存面网格
-    if (!pp.init(VI, FI, geo_b_mesh, geo_sf_mesh, args)) { // 点去重 + 判断是否水密
+    if (!pp.init(VI, FI, geo_b_mesh, geo_sf_mesh, args)) { // 点去重 + 判断是否水密 + 得到几何的边界网格geo_b_mesh + 几何的表面网格 geo_sf_mesh
         //todo: output a empty tetmesh
         PyMesh::MshSaver mSaver(state.working_dir + state.postfix + ".msh", true);
         Eigen::VectorXd oV;
@@ -199,6 +199,8 @@ double tetwild_stage_one_preprocess(
 
     m_vertices.clear();
     m_faces.clear();
+    // 1. 检查边是否为二边流形，如果是则尝试合并边，如果合并之后发现一阶邻近element都在envelope内，则合并，更新拓扑
+    // 2. 检查边是否为二边流形，如果是则尝试合filp操作，如果合flip之后还在envelope内同时最小角变大了，那么flip
     pp.process(geo_sf_mesh, m_vertices, m_faces, args);
     double tmp_time = igl_timer.getElapsedTime();
     addRecord(MeshRecord(MeshRecord::OpType::OP_PREPROCESSING, tmp_time, m_vertices.size(), m_faces.size()), args, state);
@@ -227,14 +229,15 @@ double tetwild_stage_one_delaunay(
     igl_timer.start();
     logger().info("Delaunay tetrahedralizing...");
     DelaunayTetrahedralization DT;
-    m_f_tags.clear();
-    raw_e_tags.clear();
-    raw_conn_e4v.clear();
+    m_f_tags.clear(); // 面的id
+    raw_e_tags.clear(); // 边的id
+    raw_conn_e4v.clear(); // 与点相连边的id
     DT.init(m_vertices, m_faces, m_f_tags, raw_e_tags, raw_conn_e4v);
     bsp_vertices.clear();
     bsp_edges.clear();
     bsp_faces.clear();
     bsp_nodes.clear();
+    // 插入voxel点，进行Delaundy，同时初始化 BSP Tree
     DT.tetra(m_vertices, geo_sf_mesh, bsp_vertices, bsp_edges, bsp_faces, bsp_nodes, args, state);
     logger().debug("# bsp_vertices = {}", bsp_vertices.size());
     logger().debug("# bsp_edges = {}", bsp_edges.size());
@@ -334,7 +337,7 @@ void tetwild_stage_one(
     const Eigen::MatrixXi &FI,
     const Args &args,
     State &state,
-    GEO::Mesh &geo_sf_mesh,
+    GEO::Mesh &geo_sf_mesh, // 几何
     GEO::Mesh &geo_b_mesh,
     std::vector<TetVertex> &tet_vertices,
     std::vector<std::array<int, 4>> &tet_indices,

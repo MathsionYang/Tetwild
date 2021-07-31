@@ -34,7 +34,7 @@ public:
     std::unordered_set<int> conn_nodes;
     std::unordered_set<int> div_faces;
 
-    int matched_f_id=-1;
+    int matched_f_id=-1; // 是否匹配，DT之前的my_face和DT之后对应位置的面，换句话说，在my_face中有一个面片x，在DT之后面片x依然存在，则认为匹配上了。并且存储my_face中这个面片对应的id。
 };
 
 class BSPtreeNode{
